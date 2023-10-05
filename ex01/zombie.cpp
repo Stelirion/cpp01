@@ -22,14 +22,10 @@ void Zombie::randomChump( std::string name ) {
     zombie.announce();
 }
 
-void Zombie::setName(std::string name) {
-    this->_Name = name;
-}
-
-Zombie* zombieHorde( int N, std::string name ) {
+Zombie* Zombie::zombieHorde( int N, std::string name ) {
     Zombie *zombies = new Zombie[N];
     for (int i = 0; i < N; i++) {
-        zombies[i].setName(name);
+        zombies[i]._Name = name;
     }
     return zombies;
 }
