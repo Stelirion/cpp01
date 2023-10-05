@@ -10,6 +10,11 @@ int main(int argc, char **argv)
         std::cout << "Wrong number of arguments" << std::endl;
         return 1;
     }
+    if (argv[1] == NULL || argv[2] == NULL || argv[3] == NULL)
+    {
+        std::cout << "Error empty argument" << std::endl;
+        return (1);
+    }
     std::string filename = argv[1];
     std::string s1 = argv[2];
     std::string s2 = argv[3];
