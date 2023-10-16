@@ -10,7 +10,7 @@ int main(int argc, char **argv)
         std::cout << "Wrong number of arguments" << std::endl;
         return 1;
     }
-    if (argv[1] == NULL || argv[2] == NULL || argv[3] == NULL)
+    if (argv[2] == NULL || argv[2][0] == '\0')
     {
         std::cout << "Error empty argument" << std::endl;
         return (1);
