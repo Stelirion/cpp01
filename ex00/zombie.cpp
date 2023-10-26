@@ -1,6 +1,7 @@
 #include "zombie.hpp"
 
-Zombie::Zombie() {
+Zombie::Zombie(std::string name) {
+    this->_Name = name;
 }
 
 Zombie::~Zombie() {
@@ -10,14 +11,12 @@ void Zombie::announce(void) {
     std::cout << this->_Name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-Zombie* Zombie::newZombie( std::string name ) {
-    Zombie *zombie = new Zombie();
-    zombie->_Name = name;
+Zombie *newZombie( std::string name ) {
+    Zombie *zombie = new Zombie(name);
     return zombie;
 }
 
 void Zombie::randomChump( std::string name ) {
-    Zombie zombie;
-    zombie._Name = name;
+    Zombie zombie(name);
     zombie.announce();
 }
