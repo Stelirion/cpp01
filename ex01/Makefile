@@ -2,6 +2,7 @@ NAME	= zombie
 
 SRCS	= 	main.cpp \
 			zombie.cpp \
+			zombieHorde.cpp
 
 HEADERS	=	zombie.hpp \
 

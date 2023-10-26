@@ -2,6 +2,8 @@ NAME	= zombie
 
 SRCS	= 	main.cpp \
 			zombie.cpp \
+			randomChump.cpp	\
+			newZombie.cpp
 
 HEADERS	=	zombie.hpp \
 

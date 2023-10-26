@@ -1,4 +1,4 @@
-#include "zombie.hpp"
+#include "Zombie.hpp"
 
 Zombie::Zombie(std::string name) {
     this->_Name = name;
@@ -26,11 +26,4 @@ Zombie *newZombie( std::string name ) {
 void Zombie::randomChump( std::string name ) {
     Zombie zombie(name);
     zombie.announce();
-}
-
-Zombie* zombieHorde( int N, std::string name ) {
-    Zombie *zombies = new Zombie[N];
-    for (int i=0; i<N; i++)
-        zombies[i].setName(name);
-    return zombies;
 }
